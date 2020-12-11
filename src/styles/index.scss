@@ -1,13 +1,40 @@
 @import "~bootstrap/scss/bootstrap.scss";
-
-/* 
-
-    You can write your own styles here...
+#app{
     
+    background-color: #191919		;
+    color: lightgray;
     
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
+}
+.songs{
+    &-list{
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        background-color: white;
+    }
+}
+    .song{
+        border-bottom: #222 1px solid;
+        padding: 0.5rem 1rem;
+        
+        &.selected{
+            background-color: transparentize($color:white, $amount: 0.6);
+        }
+        &:hover{
+            background-color: transparentize($color:white, $amount: 0.8);
+        }
+        &-number{
+            padding: 0.5rem 1rem;
+            color: white;
+            margin-right: 1 rem;
+        }
+    }
 
-*/
+
+ 
+     
+
+
+
+
+
